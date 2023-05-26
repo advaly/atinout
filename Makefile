@@ -3,7 +3,7 @@ VERSION	= 0.9.1
 PREFIX	= /usr
 
 CC	= gcc
-CFLAGS	= -W -Wall -Wextra -Werror \
+CFLAGS	= -W -Wall -Wextra -Werror -Wimplicit-fallthrough=1 \
 	-DVERSION=\"$(VERSION)\" \
 	-g
 LDFLAGS =
